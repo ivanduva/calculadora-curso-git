@@ -4,6 +4,7 @@ class Calculadora {
   }
 
   restar(a, b) {
+    return a - b;
     // TODO: Implementar resta
   }
 
