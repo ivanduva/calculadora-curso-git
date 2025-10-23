@@ -71,6 +71,7 @@ class Calculadora {
         if (valores.length === 0) throw new Error("No contiene numeros validos");
         //Obtencion del maximo
         return Math.max(...valores);
+        //Ultima revision Gabriel Guitian - merge actualizado (ignorar jaja)
     }
 }
 
