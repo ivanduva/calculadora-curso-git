@@ -59,6 +59,19 @@ class Calculadora {
         const total = valores.reduce((acc, n) => acc + n, 0);
         return total / valores.length;
     }
+
+    maximo(numeros) {
+        //Verifica que sea un arreglo y que no este vacio
+        if (!Array.isArray(numeros) || numeros.length === 0) {
+            throw new Error("Debe ingresar al menos un numero");
+        }
+        //Convierte los elementos a numero y descarta los no validos 
+        const valores = numeros.map(Number).filter(n => !Number.isNaN(n));
+        //Si todos los elementos del array son invalidos
+        if (valores.length === 0) throw new Error("No contiene numeros validos");
+        //Obtencion del maximo
+        return Math.max(...valores);
+    }
 }
 
 // Exportar para usar en tests
