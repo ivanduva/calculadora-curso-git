@@ -17,6 +17,10 @@ class Calculadora {
     return a / b;
   }
 
+  resto(a, b) {
+    return a % b;
+  }
+
   potencia(base, exponente) {
     // TODO: Implementar potencia
   }
