@@ -168,6 +168,12 @@ test('raíz cuadrada de número negativo debe retornar NaN', () => {
   expect(calc.raizCuadrada(-4)).toBeNaN();
 });
 
+// Test de Factorial 
+console.log('\nTests de factorial:');
+test('factorial de 5', () => expect(calc.factorial(5)).toBe(120));
+test('factorial de 0', () => expect(calc.factorial(0)).toBe(1));
+test('factorial de número negativo debe retornar Error', () => expect(calc.factorial(-3)).toBe("Error: no existe factorial negativo"));
+
 // Resumen
 console.log('\n=== Resumen ===');
 console.log(`Tests pasados: ${testsPasados}`);

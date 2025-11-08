@@ -45,6 +45,9 @@ Verás un menú como este:
 4. Dividir
 5. Potencia
 6. Raíz Cuadrada
+7. Resto
+8. Logaritmo Natural
+9. Logaritmo Base 10
 0. Salir
 =================================
 ```
@@ -64,11 +67,25 @@ calculadora-curso-git/
 
 ## 🔧 Funciones Disponibles
 
-| Función | Estado | Descripción |
-|---------|--------|-------------|
+| Función | Estado         | Descripción |
+|---------|----------------|-------------|
 | `sumar(a, b)` | ✅ Implementada | Suma dos números |
-| `restar(a, b)` | ⏳ Pendiente | Resta dos números |
-| `multiplicar(a, b)` | ⏳ Pendiente | Multiplica dos números |
-| `dividir(a, b)` | ⏳ Pendiente | Divide dos números |
-| `potencia(base, exp)` | ⏳ Pendiente | Eleva un número a una potencia |
-| `raizCuadrada(num)` | ⏳ Pendiente | Calcula la raíz cuadrada |
+| `restar(a, b)` | ✅ Implemetada  | Resta dos números |
+| `multiplicar(a, b)` | ✅ Implemetada  | Multiplica dos números |
+| `dividir(a, b)` | ✅ Implemetada  | Divide dos números |
+| `potencia(base, exp)` | ✅ Implementada | Eleva un número a una potencia |
+| `raizCuadrada(num)` | ✅ Implementada | Calcula la raíz cuadrada |
+| `resto(a, b)` | ✅ Implementada | Calcula el resto de una división |
+| `logaritmoNatural(num)` | ✅ Implementada | Calcula el logaritmo natural de un número |
+| `logaritmoBase10(num)` | ✅ Implementada | Calcula el logaritmo base 10 de un número |
+
+
+## Integrantes
+
+```
+├── Tomas Blanco
+├── Isabel Belinda Yucra
+├── Ariel rojas
+├── Cristian Maidana
+└── Barrera Daniel
+```
