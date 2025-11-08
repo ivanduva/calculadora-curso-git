@@ -168,6 +168,31 @@ test('raíz cuadrada de número negativo debe retornar NaN', () => {
   expect(calc.raizCuadrada(-4)).toBeNaN();
 });
 
+// Test de Factorial 
+console.log('\nTests de factorial:');
+test('factorial de 5', () => expect(calc.factorial(5)).toBe(120));
+test('factorial de 0', () => expect(calc.factorial(0)).toBe(1));
+test('factorial de número negativo debe retornar Error', () => expect(calc.factorial(-3)).toBe("Error: no existe factorial negativo"));
+
+// Tests de Historial 
+console.log('\nTests de historial:');
+test('limpiarHistorial deja el historial vacío', () => {
+  calc.limpiarHistorial();
+  expect(calc.getHistorial().length).toBe(0);
+});
+
+test('cada operación registra una entrada en el historial', () => {
+  calc.limpiarHistorial();
+  calc.sumar(1, 2);      // 3
+  calc.restar(3, 1);     // 2
+  const h = calc.getHistorial();
+  expect(h.length).toBe(2);
+  expect(h[0].operacion).toBe('sumar');
+  expect(h[0].resultado).toBe(3);
+  expect(h[1].operacion).toBe('restar');
+  expect(h[1].resultado).toBe(2);
+});
+
 // Resumen
 console.log('\n=== Resumen ===');
 console.log(`Tests pasados: ${testsPasados}`);
